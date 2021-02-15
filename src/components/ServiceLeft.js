@@ -2,7 +2,7 @@ import {ServiceText, ServiceImage} from './styled-comps'
 import {Link} from 'react-router-dom'
 export default function ServiceLeft(props) {
     return (
-        <Link to='/services'>
+        <Link to='/services' style={{textDecoration:'none'}}>
             <div className="row m-0">
                 <div className="col-md-6">
                     <ServiceText>

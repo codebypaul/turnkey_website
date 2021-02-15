@@ -2,7 +2,7 @@ import {ServiceText,ServiceImage} from './styled-comps'
 import {Link} from 'react-router-dom'
 export default function ServiceRight(props) {
     return (
-        <Link to='/services'>
+        <Link to='/services' style={{ textDecoration: 'none'}}>
         <div class="row m-0">
             <div class="col-md-6 d-flex align-items-center">
                 <ServiceImage src={props.image} alt="image"/>

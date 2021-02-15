@@ -1,5 +1,5 @@
 import ContactForm from '../components/ContactForm'
-import ServiceForm from '../components/ServiceForm'
+import {Link} from 'react-router-dom'
 export default function Contact() {
     return (
         <div>
@@ -7,9 +7,9 @@ export default function Contact() {
             <div className="card p-3 my-5">
                 <ContactForm/>
             </div>
-            <div className="card p-3">
-                <ServiceForm/>
-            </div>
+            <Link to='/ready_for_service'>
+                Already know what you need?
+            </Link>
             <div className="card p-5">
                 <p><strong>Call :</strong> <a href="tel:7048917992"> (704) 891-7992</a></p>
                 <p><strong>Email :</strong> <a href="mailto:info@turnkeyroofingnc.com"> info@turnkeyroofingnc.com</a></p>

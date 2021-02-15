@@ -13,7 +13,8 @@ export default function Footer() {
             <div className="d-flex justify-content-between links-area">
                 <div>
                     <h1>Help</h1>
-                    <p>Email Us: info@turnkeyroofingnc.com</p>
+                    <p>Email Us: <br/>
+                    info@turnkeyroofingnc.com</p>
                     <p>Call Us: 704-891-7992</p>
                 </div>
                 <div>
@@ -28,7 +29,7 @@ export default function Footer() {
                     <p>Privacy Poicy</p>
                 </div>
             </div>
-            <div className="social-payment d-flex">
+            <div className="social-payment d-flex justify-content-between">
                 <div>
                     
                 </div>
@@ -44,10 +45,9 @@ export default function Footer() {
     )
 }
 const FooterWrapper = styled.footer`
-    background: black;
+    background: rgba(0,51,102,1);
     padding: 2rem;
     .links-area {
-        border: 1px solid white;
         width: 100%;
         color: white;
     }
@@ -56,8 +56,10 @@ const FooterWrapper = styled.footer`
         
     }
     .payment-method {
-        padding: .25rem .5rem;
+        padding: .25rem .75rem;
         background: white;
         width: 4rem;
+        margin: 0 .5rem;
+        border-radius: .5rem;
     }
 `

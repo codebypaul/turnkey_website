@@ -9,9 +9,10 @@ const ServiceImage = styled.img`
 `
 const LinkBtn = styled.button`
     padding: .5rem;
-    background: red;
+    background: rgba(0,51,102,1);
     border: .025rem solid grey;
     border-radius: .5rem;
+    color: white;
 `
 
 export {ServiceText, ServiceImage, LinkBtn}

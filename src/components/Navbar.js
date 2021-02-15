@@ -1,10 +1,9 @@
-import { Link } from 'react-router-dom'
 import {Nav, Navbar, NavDropdown, Button, Form, FormControl } from 'react-bootstrap'
-
+import styled from 'styled-components'
 export default function SiteNavbar() {
     return (
-        <div>
-            <Navbar bg="light" expand="lg">
+        <NavWrapper>
+            <Navbar expand="lg" variant="dark">
                 <Navbar.Brand href="/">TurnKey Construction</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -16,7 +15,7 @@ export default function SiteNavbar() {
                         <NavDropdown.Item href="/services#">Roofs</NavDropdown.Item>
                         <NavDropdown.Item href="/services#">Remodels</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="/services#">Not exactly sure?</NavDropdown.Item>
+                        <NavDropdown.Item href="/contact">Not exactly sure?</NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link href="/contact">Contact Us</Nav.Link>
                     </Nav>
@@ -26,6 +25,14 @@ export default function SiteNavbar() {
                     </Form>
                 </Navbar.Collapse>
             </Navbar>
-        </div>
+        </NavWrapper>
     )
 }
+
+const NavWrapper = styled.nav`
+    color: white;
+    background: rgba(0,51,102,1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+`
